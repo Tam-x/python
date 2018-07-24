@@ -10,10 +10,11 @@ Last edited: 2018/07/19
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from UI.UiController import WindowController
+from UI.MyQMainWindow import MyMainWindow
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    mainWindow = QMainWindow()
+    mainWindow = MyMainWindow()
     ui = WindowController(mainWindow)
     mainWindow.show()
     sys.exit(app.exec_())

@@ -8,12 +8,12 @@ Last edited: 2018/07/20
 '''
 
 
-VERSION = '1.0.1'
+VERSION = '1.1.0'
 
 CODE_MQTT_REMOTE = 0x01
 CODE_MQTT_MONITOR = 0x02
 
-MQTT_CLIENT = 'client-from-dthing-remote-desktop-tool'
+MQTT_CLIENT = 'client-from-desktop-tool'
 
 MQTT_REMOTE_BROKER = '182.61.25.208'
 MQTT_REMOTE_PORT = '1883'
@@ -21,6 +21,12 @@ MQTT_REMOTE_USER = 'admin'
 MQTT_REMOTE_PWD = 'pwd'
 MQTT_TOPIC_CLIENT_TO_REMOTE = 'dthing/terminal2remote/data'
 MQTT_TOPIC_REMOTE_TO_CLIENT = 'dthing/remote2terminal/data'
+
+MQTT_MONITOR_BROKER = '182.61.25.208'
+MQTT_MONITOR_PORT = '1883'
+MQTT_MONITOR_USER = 'admin'
+MQTT_MONITOR_PWD = 'pwd'
+MQTT_TOPIC_CLIENT_TO_MONITOR = 'dtu/up/sys/yarlung/%s/devices'
 
 CMD_STR_NONE = 'none'
 CMD_STR_INSTALL = 'install'
@@ -45,3 +51,6 @@ KEY_LINK_SOCKET = 'current_tcp_socket'
 STATUS_OK = 'ok'
 STATUS_ERROR = 'error'
 STATUS_RECVED = 'received'
+
+SYS_VALUE ={11:'-',12:'-',13:'-',14:'-',15:'-',16:'-',17:'-',18:'-',51:'-',52:'-'}
+TASK_VALUE = {}
